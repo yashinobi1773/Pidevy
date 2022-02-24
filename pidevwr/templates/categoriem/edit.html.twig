@@ -1,0 +1,13 @@
+{% extends 'base-back.html.twig' %}
+
+{% block title %}Modifier Catégorie{% endblock %}
+
+{% block body %}
+    <h1>Modifier Catégorie</h1>
+
+    {{ include('categoriem/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('categoriem_index') }}">back to list</a>
+
+    {{ include('categoriem/_delete_form.html.twig') }}
+{% endblock %}

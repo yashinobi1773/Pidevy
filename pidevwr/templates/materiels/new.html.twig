@@ -1,0 +1,11 @@
+{% extends 'base-back.html.twig' %}
+
+{% block title %}Nouveau Matériel{% endblock %}
+
+{% block body %}
+    <h1>Nouveau Matériel</h1>
+
+    {{ include('materiels/_form.html.twig') }}
+
+    <a href="{{ path('materiels_index') }}">back to list</a>
+{% endblock %}

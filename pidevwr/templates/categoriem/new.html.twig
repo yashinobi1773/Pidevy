@@ -1,0 +1,11 @@
+{% extends 'base-back.html.twig' %}
+
+{% block title %}Nouvelle Catégorie{% endblock %}
+
+{% block body %}
+    <h1>Nouvelle Catégorie</h1>
+
+    {{ include('categoriem/_form.html.twig') }}
+
+    <a href="{{ path('categoriem_index') }}">back to list</a>
+{% endblock %}
